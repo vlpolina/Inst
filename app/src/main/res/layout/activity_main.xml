@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:theme="@style/Theme.AppCompat.NoActionBar">
+
+    <LinearLayout
+        android:layout_width="424dp"
+        android:layout_height="777dp"
+        android:background="@color/background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginTop="150dp"
+            app:srcCompat="@drawable/iii" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:autofillHints=""
+            android:background="@drawable/text"
+            android:ems="10"
+            android:hint="Номер телефона, эл.адрес или имя пользователя"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/darker_gray"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/text"
+            android:ems="10"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button"
+            android:baselineAligned="false"
+            android:fontFamily="cursive"
+            android:onClick="Vhod"
+            android:text="Вход"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:text="Забыли свои учётные данные? Получить помощь со входом в систему"
+            android:textAlignment="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
